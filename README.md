@@ -1,4 +1,4 @@
-#vite-boolfolio
+# vite-boolfolio
 ![Home del sito](public/screenshots/home.png)
 
 ## Vue project
