@@ -1,5 +1,5 @@
 <template>
-  <img id="logo" src="/images/dc-logo.png" alt="Logo DC">
+  <img id="logo" src="/images/logo.webp" alt="Logo DC">
 </template>
 
 <script>
