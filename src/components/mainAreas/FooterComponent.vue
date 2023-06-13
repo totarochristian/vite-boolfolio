@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-custom-dark d-flex flex-column justify-content-center align-items-center overflow-hidden">
-    <span>Made with &hearts; by <strong>Christian Totaro</strong></span>
+    <p class="text-light">Made with &hearts; by <strong>Christian Totaro</strong></p>
   </footer>
 </template>
 
@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
   footer{
-    min-height: 70vh;
+    min-height: 17.6vh;
   }
   @media screen and (max-width: 767.98px){
     footer{

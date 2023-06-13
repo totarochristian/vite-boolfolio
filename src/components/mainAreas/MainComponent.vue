@@ -22,6 +22,6 @@
 
 <style lang="scss" scoped>
   main{
-    min-height: 17.7vh;
+    min-height: 70vh;
   }
 </style>
