@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "ProjectComponent",
+    name: "ProjectCardComponent",
     props:{
       index: Number,
       projectData: Object

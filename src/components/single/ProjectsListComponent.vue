@@ -1,18 +1,18 @@
 <template>
   <div class="w-75 h-100 d-flex flex-column justify-content-start align-items-center pb-4">
     <div id="projectsCards" class="px-3 py-4 d-flex justify-content-center flex-wrap gap-4">
-      <ProjectComponent :index="index" :projectData="project" v-for="(project,index) in projects" />
+      <ProjectCardComponent :index="index" :projectData="project" v-for="(project,index) in projects" />
     </div>
   </div>
 </template>
 
 <script>
-  import ProjectComponent from './ProjectComponent.vue';
+  import ProjectCardComponent from './ProjectCardComponent.vue';
   import axios from 'axios';
   export default {
-    name: "ProjectsCardsComponent",
+    name: "ProjectsListComponent",
     components: {
-      ProjectComponent
+      ProjectCardComponent
     },
     data(){
       return{
