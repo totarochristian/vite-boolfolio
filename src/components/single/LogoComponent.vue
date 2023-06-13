@@ -1,5 +1,8 @@
 <template>
-  <img id="logo" src="/images/logo.webp" alt="Logo DC">
+  <div class="h-100 d-flex justify-content-center align-items-center gap-4">
+    <img id="logo" src="/images/logo.webp" alt="Logo DC" />
+    <h1>Boolfolio</h1>
+  </div>
 </template>
 
 <script>
