@@ -1,12 +1,26 @@
 <template>
-  <div>
-    <h1>Hello world!</h1>
-  </div>
+  <HeaderComponent :menuElements="menuElements" />
+  <MainComponent :menuElements="menuElements" />
+  <FooterComponent />
 </template>
 
 <script>
-  export default{
-    name: 'App'
+  import HeaderComponent from "./components/mainAreas/HeaderComponent.vue";
+  import MainComponent from "./components/mainAreas/MainComponent.vue";
+  import FooterComponent from "./components/mainAreas/FooterComponent.vue";
+  import { menuData } from './data/data';
+  export default {
+    name: "App",
+    components:{
+      HeaderComponent,
+      MainComponent,
+      FooterComponent
+    },
+    data(){
+      return{
+        menuElements: menuData
+      }
+    }
   }
 </script>
 
