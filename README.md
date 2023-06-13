@@ -1,29 +1,47 @@
-# .
+## Vue project
 
-This template should help get you started developing with Vue 3 in Vite.
+```bash
+# 1. Crea repo su git (senza opzioni se non pubblico)
+# 2. Clonare la repo e apri la cartella su vs code e aprire terminale
+# 3. digitare: npm init vue@latest
+# 4. per creare il progetto nella directory corrente mettere solo un  punto
+# 5. nome package lo stesso della cartella poi lasciare tutto come sta
+# 6. dire si all'opzione vue router
+# 7. npm install
+# 8. npm run dev
 
-## Recommended IDE Setup
+npm install bootstrap axios @fortawesome/fontawesome-free sass
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# eventualmente facciamo vedere fontsource: https://fontsource.org/fonts/montserrat
+npm install @fontsource/montserrat
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+# copiamo la cartella webfonts da fontawesome in node-modules in assets
+# inizialmente commentiamo l'importazione e l'uso del router di view dal main js
 ```
 
-### Compile and Hot-Reload for Development
+### Assets
+```bash
+# src/assets/styles/partials/_variable.scss
+// COLORS
+$bg-color: #fefefe;
+$text-color: #333;
 
-```sh
-npm run dev
+//Typography
+$main-font: 'Montserrat', sans-serif;
+
+# src/assets/styles/main.scss
+@use './partials/variables' as *;
+
+$fa-font-path: '../webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+
+@import 'bootstrap/scss/bootstrap';
+
+@import '@fontsource/montserrat/index.css';
+@import '@fontsource/montserrat/700.css';
+
+# ...style here
 ```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
