@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import HeaderComponent from "./components/mainAreas/HeaderComponent.vue";
-  import MainComponent from "./components/mainAreas/MainComponent.vue";
-  import FooterComponent from "./components/mainAreas/FooterComponent.vue";
-  import { menuData } from './data/data';
+  import HeaderComponent from "../components/mainAreas/HeaderComponent.vue";
+  import MainComponent from "../components/mainAreas/MainComponent.vue";
+  import FooterComponent from "../components/mainAreas/FooterComponent.vue";
+  import { menuData } from '../data/data';
   export default {
     name: "HomePage",
     components:{
