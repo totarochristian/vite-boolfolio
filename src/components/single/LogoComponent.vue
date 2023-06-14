@@ -1,7 +1,9 @@
 <template>
-  <div class="h-100 d-flex justify-content-center align-items-center gap-4">
-    <img id="logo" src="/images/logo.webp" alt="Logo DC" />
-    <h1>Boolfolio</h1>
+  <div id="logoContainer" class="h-100 d-flex justify-content-center align-items-center gap-4">
+    <div class="d-flex gap-4 align-items-center">
+      <img id="logo" src="/images/logo.webp" alt="Logo DC" />
+      <h1>Boolfolio</h1>
+    </div>
   </div>
 </template>
 
@@ -21,7 +23,9 @@
       height: 100px;
       width: 100px;
       margin: 0 auto;
-      margin-top: 2.5rem;
+    }
+    #logoContainer{
+      width: 100%;
     }
   }
 </style>
