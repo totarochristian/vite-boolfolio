@@ -2,7 +2,7 @@
   <div :id="'project_'+index" class="project d-flex flex-column gap-2" @click="redirectToDetail">
     <div class="projectImage">
       <img :src="projectData.image" :alt="projectData.title" class="w-100 h-100">
-      <h5 class="title w-100 pt-3 fw-bold">{{ projectData.title }}</h5>
+      <h4 class="title w-100 pt-3 fw-bold">{{ projectData.title }}</h4>
       <span class="category text-uppercase fw-bold badge bg-primary">{{ projectData.category.name }}</span>
     </div>
   </div>
