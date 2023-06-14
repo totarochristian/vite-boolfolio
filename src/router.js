@@ -17,4 +17,6 @@ const router = createRouter({
       component: SingleProject
     },
   ]
-})
+});
+
+export { router };
