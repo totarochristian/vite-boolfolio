@@ -1,15 +1,24 @@
 const menuData = [
   {
     isActive: true,
-    text: 'Progetti'
+    text: 'Progetti',
+    link: {
+      name: 'home'
+    }
   },
   {
     isActive: false,
-    text: 'Categorie'
+    text: 'Categorie',
+    link: {
+      name: 'not-found'
+    }
   },
   {
     isActive: false,
-    text: 'Tecnologie'
+    text: 'Tecnologie',
+    link: {
+      name: 'not-found'
+    }
   }
 ];
 
