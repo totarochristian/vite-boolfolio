@@ -1,6 +1,8 @@
 <template>
   <HeaderComponent :menuElements="menuElements" />
-  <router-view></router-view>
+  <main>
+    <router-view></router-view>
+  </main>
   <FooterComponent />
 </template>
 

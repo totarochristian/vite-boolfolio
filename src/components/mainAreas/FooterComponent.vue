@@ -11,9 +11,6 @@
 </script>
 
 <style lang="scss" scoped>
-  footer{
-    min-height: 17.6vh;
-  }
   @media screen and (max-width: 767.98px){
     footer{
       flex-wrap: wrap;

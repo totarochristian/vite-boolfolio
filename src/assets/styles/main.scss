@@ -10,3 +10,8 @@ $fa-font-path: '../webfonts';
 
 @import '@fontsource/montserrat/index.css';
 @import '@fontsource/montserrat/700.css';
+
+header{ height: $headerSize!important; }
+footer{ height: $footerSize!important; }
+main{ height: $mainSize!important; }
+header,footer,main { width: 100%; }

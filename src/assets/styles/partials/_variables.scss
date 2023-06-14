@@ -1,3 +1,8 @@
 /* Color styles */
 $customBlack: #1c1c1c;
 $customDark: #303030;
+
+/* Sizes */
+$headerSize: 120px;
+$footerSize: 60px;
+$mainSize: calc(100vh - $headerSize - $footerSize);
