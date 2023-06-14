@@ -1,5 +1,5 @@
 <template>
-  <div :id="'project_'+index" class="project d-flex flex-column gap-2">
+  <div :id="'project_'+index" class="project d-flex flex-column gap-2" @click="redirectToDetail">
     <div class="projectImage">
       <img :src="projectData.image" :alt="projectData.title" class="w-100 h-100">
       <span class="category text-uppercase fw-bold badge bg-primary">{{ projectData.category.name }}</span>
@@ -12,11 +12,24 @@
 </template>
 
 <script>
+import { router } from '../../router';
+
   export default {
     name: "ProjectCardComponent",
     props:{
       index: Number,
       projectData: Object
+    },
+    methods: {
+      redirectToDetail(){
+        let link = {
+          name: 'project',
+          params: {
+            slug: this.projectData.slug
+          }
+        };
+        router.push(link);
+      }
     }
   }
 </script>
