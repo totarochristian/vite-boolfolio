@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-custom-dark d-flex flex-column justify-content-center align-items-center overflow-hidden">
-    <p class="text-light">Made with &hearts; by <strong>Christian Totaro</strong></p>
+    <span class="text-light">Made with &hearts; by <strong>Christian Totaro</strong></span>
   </footer>
 </template>
 
