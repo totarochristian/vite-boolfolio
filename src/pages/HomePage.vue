@@ -1,16 +1,17 @@
 <template>
-  <MainComponent :menuElements="menuElements" />
+  <div class="w-100 h-100">
+    <ProjectsComponent/>
+  </div>
 </template>
 
 <script>
-  
-  import MainComponent from "../components/mainAreas/MainComponent.vue";
+  import ProjectsComponent from '../components/subAreas/main/ProjectsComponent.vue';
   
   import { menuData } from '../data/data';
   export default {
     name: "HomePage",
     components:{
-      MainComponent
+      ProjectsComponent
     },
     data(){
       return{

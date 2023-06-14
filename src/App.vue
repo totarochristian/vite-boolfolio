@@ -1,6 +1,6 @@
 <template>
   <HeaderComponent :menuElements="menuElements" />
-  <main>
+  <main class="bg-custom-black text-white d-flex justify-content-center align-items-center overflow-hidden">
     <router-view></router-view>
   </main>
   <FooterComponent />
