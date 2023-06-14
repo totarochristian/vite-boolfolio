@@ -31,7 +31,6 @@
       return{
         projects: [],
         apiUrl: 'http://127.0.0.1:8000/api',
-        imgBasePath: 'http://127.0.0.1:8000/storage/',
         currentPage: 1,
         lastPage: 1
       }
