@@ -1,5 +1,14 @@
 # vite-boolfolio
-![Home del sito](public/screenshots/home.png)
+## Screenshots
+
+### Home
+![Home del sito](public/screenshots/home.jpg)
+
+### Project
+![Home del sito](public/screenshots/project.jpg)
+
+### Page not found
+![Home del sito](public/screenshots/not-found.jpg)
 
 ## Vue project
 
