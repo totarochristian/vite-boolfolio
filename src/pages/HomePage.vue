@@ -10,7 +10,7 @@
   import FooterComponent from "./components/mainAreas/FooterComponent.vue";
   import { menuData } from './data/data';
   export default {
-    name: "App",
+    name: "HomePage",
     components:{
       HeaderComponent,
       MainComponent,
