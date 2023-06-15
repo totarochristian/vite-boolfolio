@@ -1,5 +1,6 @@
 <template>
-  <div class="w-100 h-100 overflow-y-auto p-4 d-flex justify-content-center align-items-center gap-4 flex-wrap" v-if="project">
+  <LoaderComponent v-if="loading" />
+  <div class="w-100 h-100 overflow-y-auto p-4 d-flex justify-content-center align-items-center gap-4 flex-wrap" v-if="project && !loading">
     <div class="projectImage">
       <img :src="project.image" :alt="project.title" class="w-100 h-100" />
     </div>
@@ -21,14 +22,19 @@
 </template>
 
 <script>
-import axios from 'axios';
+  import axios from 'axios';
+  import LoaderComponent from '../components/single/LoaderComponent.vue';
 
   export default {
     name: 'SingleProject',
+    components: {
+      LoaderComponent
+    },
     data(){
       return {
         project: null,
         apiUrl: 'http://127.0.0.1:8000/api',
+        loading: true
       }
     },
     methods: {
@@ -36,6 +42,8 @@ import axios from 'axios';
         axios.get(this.apiUrl+'/projects/'+this.$route.params.slug).then((res) => {
           console.log(res.data.results);
           this.project = res.data.results;
+        }).finally(()=>{
+          this.loading = false;
         });
       }
     },
